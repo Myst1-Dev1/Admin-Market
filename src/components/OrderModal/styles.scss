@@ -1,0 +1,54 @@
+.modal-container {
+    position: relative;
+    width: 22rem;
+
+    .close-modal {
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+    }
+
+    form {
+
+        input, select {
+            width: 100%;
+            padding: 0 1.5rem;
+            height: 4rem;
+            border-radius: 0.25rem;
+
+            border: 1px solid #d7d7d7;
+            background: #e7e9ee;
+
+            font-weight: 400;
+            font-size: 1rem;
+        }
+
+        button {
+            border-radius: 0.4rem;
+            font-family: 'Poppins', sans-serif;
+            padding: 0.8rem;
+            background-color: black;
+            border: none;
+            transition: filter 0.3s;
+            width: 100%;
+            color: aliceblue;
+
+            &:hover {
+                filter: brightness(0.8);
+            }
+        }
+
+    }
+}
+
+@media(max-width:750px) {
+    .modal-container {
+        width: 18rem;
+    }
+}
+
+@media(max-width:350px) {
+    .modal-container {
+        width: 12rem;
+    }
+}
